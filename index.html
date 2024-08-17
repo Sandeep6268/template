@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -43,9 +43,11 @@
             
           </div>
         </div>
-        <div class="menu-btn">
-          <a class="anchor-btn" id="nav-toggle" href="#"><i class="fa-solid fa-bars"></i></a></h5>
-          
+        <div class="hamburger" id="nav-toggle">
+          <div class="hamburger__container">
+            <div class="hamburger__inner"></div>
+            <div class="hamburger__hidden"></div>
+          </div>
         </div>
         
       </div>
@@ -516,12 +518,15 @@
     </section>
     <!-- footer section end  -->
     <script>
+      document.querySelector('.hamburger').addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('is-active');
       const toggleButton = document.getElementById("nav-toggle");
       const navLinks = document.getElementById("nav-links");
 
       toggleButton.addEventListener("click", () => {
         navLinks.classList.toggle("active");
       });
-    </script>
+    })
+</script>
   </body>
 </html>
