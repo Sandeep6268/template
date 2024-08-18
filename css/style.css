@@ -139,7 +139,13 @@ li:hover{
     transition: all .5s ease;
     scale: 1.3;
 }
-
+.header{
+    position: sticky;
+    margin-top: 0;
+    top: 0;
+    background: whitesmoke;
+    /* background: linear-gradient(to left,rgb(57, 54, 244),rgb(206, 80, 179)); */
+}
 .left-header{
     color: #C5001A;
 }
@@ -153,6 +159,7 @@ ul{
 }
 .home{
     margin-block: 100px;
+    padding-top: 100px;
 }
 .home-content{
     display: flex;
@@ -192,6 +199,7 @@ ul{
 }
 .about{
     margin-block: 150px;
+    padding-top: 100px;
 }
 .about-btn-div{
     /* background: #51B56D; */
@@ -206,6 +214,7 @@ ul{
 }
 .diffrence-of-us{
     margin-block: 150px;
+    padding-top: 100px;
 }
 
 .diffrence-cards{
@@ -288,6 +297,9 @@ ul{
 .color-btn{
     color: #C5001A;
 
+}
+.footer{
+    padding-top: 100px;
 }
 .btn-width:hover{
     background: #C5001A;
@@ -431,6 +443,9 @@ ul{
 .footer-main{
     flex-direction: column;
     gap: 20px;
+}
+.services{
+    padding-top: 100px;
 }
 .footer{
     background: #f0e9e9;
